@@ -1,0 +1,174 @@
+.section {
+  height: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 15px;
+}
+
+.table-items {
+  width: 50%;
+  border-collapse: collapse;
+  border-radius: 10px;
+  border: 1px solid rgb(220, 218, 218);
+  margin-right: 15px;
+  margin-top: 20px;
+}
+
+.data {
+  border-spacing: 0;
+  color: #3a3939c5;
+  border-color: rgb(220, 218, 218);
+}
+
+table,
+th,
+td {
+  position: relative;
+  padding: 5px;
+}
+
+th,
+td {
+  text-align: left;
+}
+
+th i {
+  color: rgb(220, 218, 218);
+  font-size: 10px;
+}
+
+td {
+  color: #6e6d6d;
+}
+
+th select {
+  position: absolute;
+  right: 35px;
+  width: 80px;
+  height: 20px;
+  border-radius: 5px;
+  border: 1px solid rgb(220, 218, 218);
+  color: rgb(70, 69, 69);
+}
+
+th span {
+  position: absolute;
+  right: 10px;
+  text-align: right;
+  margin: 0;
+  color: rgb(197, 193, 193);
+}
+
+table.data {
+  table-layout: fixed;
+  width: 100%;
+}
+
+.chart {
+  height: 80%;
+  width: 50%;
+  margin-left: 15px;
+  margin-top: 18px;
+  padding-bottom: 5px;
+  border-collapse: collapse;
+  border-radius: 10px;
+  border: 1px solid rgb(220, 218, 218);
+}
+
+.chart table td {
+  padding: 125px;
+}
+
+#can{
+  position: absolute;
+  top: 50px;
+  right: 280px;
+  width: 50px;
+  height: 50px;
+  box-sizing: border-box;
+  display: block;
+}
+
+@media (max-width: 1035px) {
+  .section {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 15px;
+  }
+
+  .table-items {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px;
+    border: 1px solid rgb(220, 218, 218);
+    margin-right: 15px;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .section {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 15px;
+  }
+
+  .table-items {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px;
+    border: 1px solid rgb(220, 218, 218);
+    margin-right: 10px;
+    margin-top: 20px;
+  }
+
+  .data {
+    border-spacing: 0;
+    color: #3a3939c5;
+    border-color: rgb(220, 218, 218);
+  }
+
+  table,
+  td {
+    position: relative;
+    padding: 3px;
+    font-size: 13px;
+  }
+
+  table th {
+    margin: 15px;
+  }
+
+  th,
+  td {
+    text-align: left;
+  }
+
+  th i {
+    position: absolute;
+    top: 80px;
+    color: rgb(220, 218, 218);
+  }
+
+  td {
+    color: #6e6d6d;
+  }
+
+  th span {
+    position: absolute;
+    right: 5px;
+    text-align: right;
+    margin: 0;
+    color: rgb(197, 193, 193);
+  }
+
+  table.data {
+    table-layout: fixed;
+    width: 100%;
+  }
+}
